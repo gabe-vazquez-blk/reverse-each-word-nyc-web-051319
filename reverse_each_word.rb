@@ -1,7 +1,6 @@
 def reverse_each_word(sentence)
-  new_count = []
-  sentence.
-  sentence.each do |x|
+  sentence = sentence.split(" ")
+  sentence.each do |w|
     x += 1
     new_count << x
   end
