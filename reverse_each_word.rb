@@ -9,11 +9,9 @@
 #end
 
 def reverse_each_word(sentence)
-  new_sentence = []
   sentence = sentence.split(" ")
-  sentence.each do |w|
+  sentence.collect do |w|
     w = w.reverse!
-    new_sentence << w
   end
-  new_sentence.join(" ")
+  sentence.join(" ")
 end
